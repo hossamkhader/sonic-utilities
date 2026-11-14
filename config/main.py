@@ -78,6 +78,7 @@ from . import bgp_cli
 from . import stp
 from . import evpn_mh
 from . import llr
+from . import pac
 
 # mock masic APIs for unit test
 try:
@@ -1974,6 +1975,7 @@ def config(ctx):
 config.add_command(aaa.aaa)
 config.add_command(aaa.tacacs)
 config.add_command(aaa.radius)
+config.add_command(pac.pac)
 config.add_command(bmc.bmc)
 config.add_command(chassis_modules.chassis)
 config.add_command(liquid_cool.liquid_cool)
